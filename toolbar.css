@@ -39,7 +39,7 @@
 			position: relative;
 			background-color: yellow;
 			color: white;	
-			width:300px;
+			width: 100%;
 			height: 50px;
 			text-align: center;
 			display:table;
@@ -63,9 +63,10 @@
 		cursor: pointer;
 		height: 50px;
 		width: 50px;
-		left: 240px;
+		right: 10px;
 		outline:none;
 		border: none;
+		position: absolute;
 	}
 
 	.button_block_headerAND_fontSize
@@ -106,6 +107,7 @@
 	}
 
 	.buttons_with_header_block {
+		position: relative;
 		display: block;
 		text-align: center;
 		box-sizing: border-box;
@@ -128,7 +130,7 @@
 		display: inline-block;
 		font-size: 12px;
 		height: 95px;
-		width: 95px;
+		width: 32%;
 		text-align: center;
 		margin-bottom: 20px;
 		vertical-align: middle;
