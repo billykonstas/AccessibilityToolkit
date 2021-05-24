@@ -33,6 +33,7 @@
 		visibility: visible; /*put hidden later*/
 		opacity: 1;
 		transition: opacity .4s;
+		overflow-y: auto;
 	}
 
 	.toolbox_header {
