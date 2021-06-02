@@ -166,6 +166,11 @@
 
 span.button_text {
 	color: black;
+	font-family: Helvetica;
+	text-transform: none;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: normal;
 }
 
 .material-icons-outlined {
