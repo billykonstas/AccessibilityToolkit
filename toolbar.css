@@ -29,7 +29,7 @@
 	border-radius: 0px 50px 50px 0px;
 	background-color: white;
 	z-index: 1;
-	visibility: visible; /*put hidden later*/
+	visibility: hidden;
 	opacity: 1;
 	transition: opacity .4s;
 	overflow-y: auto;
@@ -114,6 +114,7 @@
 	margin-bottom: 10px;
 	text-align: center;
 	color: black;
+	font-family: Cambria, Geneva, serif;
 }
 
 .control_button {
@@ -159,12 +160,19 @@
 .button_text {
 	display: block;
 	width: 100%;
+	color: black;
+}
+
+
+span.button_text {
+	color: black;
 }
 
 .material-icons-outlined {
 	font-family: 'Material Icons Outlined';
 	display: block;
 	width: 100%;
+	color: black;
 }
 
 .control_button:hover,
