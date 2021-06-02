@@ -89,6 +89,8 @@ accessibilityTool.prototype.initializeToolbox = function (event)
 		}
 	}
 
+	hideCheckMarks();
+
 	//If the button for the images titles was selected, generate the titles at the startup
 	if(window.toolboxState.imagesTitle == true)
 	{
@@ -163,7 +165,11 @@ accessibilityTool.prototype.closeBox = function (event)
 	//Makes the toolbox hidden when the close button is pressed
 	document.getElementById("toolbox").style.visibility='hidden';
 
-	//Also makes all the checkMarks hidden
+	hideCheckMarks();
+}
+
+function hideCheckMarks ()
+{
 	var checkMarks = document.querySelectorAll('.enabled .checkMark');
 	for (var j = 0; j < checkMarks.length; j++)
 	{
