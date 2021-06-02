@@ -3,6 +3,7 @@
 	z-index: 1 !important;
 	display: block !important;
 	left: 10px;
+	top: 10px;
 	background-color: #310357;
 	cursor: pointer;
 	border: solid 4px #7e44ad;
@@ -130,6 +131,11 @@
 	vertical-align: middle;
 	border: 2px solid black;
 	border-radius: 10px;
+}
+
+#big_button {
+	font-size: 16px;
+	line-height: 2;
 }
 
 /*CSS for the check mark*/
