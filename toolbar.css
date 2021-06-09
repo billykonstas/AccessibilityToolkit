@@ -119,6 +119,13 @@
 	font-family: Cambria, Geneva, serif;
 }
 
+.control_button_block 
+{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
 .control_button {
 	position: relative;
 	background-color: white;
@@ -126,7 +133,7 @@
 	display: inline-block;
 	font-size: 12px;
 	height: 95px;
-	width: 32%;
+	width: 100%;
 	text-align: center;
 	margin-bottom: 20px;
 	vertical-align: middle;
@@ -227,7 +234,7 @@ body.toolkit_contrast_bright
 	background: transparent;
 }
 
-body.toolkit_contrast_reverse :not(div):not(.toolkit):not(span):not(button)
+body.toolkit_contrast_reverse > :not(#toolkit_init)
 {
 	background-color: #fff;
 	color: #000;
