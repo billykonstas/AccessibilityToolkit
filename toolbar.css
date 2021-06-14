@@ -23,23 +23,24 @@
 	color: black;
 	box-shadow: 1px 0 4px 0 #777;
 	position: fixed;
-	height: 100%;
+	height: 100vh;
 	width: 300px;
 	top: 0;
 	left: 0;
 	border-radius: 0px 50px 50px 0px;
 	background-color: white;
-	z-index: 1;
+	z-index: 99999;
 	visibility: hidden;
 	opacity: 1;
 	transition: opacity .4s;
-	overflow-y: auto;
+	overflow: auto;
 	line-height: initial;
 }
 
 .toolkit_header {
 	position: relative;
 	background-color: yellow;
+	font-family: Helvetica;
 	color: white;
 	width: 100%;
 	height: 50px;
@@ -97,6 +98,39 @@
 	margin-bottom: 10px;
 }
 
+.button_block_headerAND_flag
+{
+	display: grid;
+	max-height: 35px;
+	grid-template-areas: 'left center right';
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+}
+
+#multimedia_title
+{
+	font-size: 20px;
+	grid-area: center;
+	width: 95px;
+}
+
+#change_language_button
+{
+	grid-area: right;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+#flag_icon
+{
+	//grid-area: right;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	bottom: 4px;
+}
+
 .toolkit_header img {
 	margin-right: 5px;
 }
@@ -133,7 +167,8 @@
 	display: inline-block;
 	font-size: 12px;
 	height: 95px;
-	width: 100%;
+	max-width: 95px;
+	min-width: 95px;
 	text-align: center;
 	margin-bottom: 20px;
 	vertical-align: middle;
@@ -203,7 +238,7 @@ span.button_text {
 
 .reset_button_block {
 	height: 95px;
-	margin-top: 40px;
+	margin-top: 20px;
 	box-sizing: border-box;
 	text-align: center;
 }
@@ -221,6 +256,33 @@ span.button_text {
 }
 
 /*Apply filters*/
+
+/*Keyboard surfing*/
+body.toolkit_media_keyboard>:not(#toolkit_init) a:focus,
+body.toolkit_media_keyboard>:not(#toolkit_init) button:focus,
+body.toolkit_media_keyboard>:not(#toolkit_init) h1:focus,
+body.toolkit_media_keyboard>:not(#toolkit_init) h2:focus,
+body.toolkit_media_keyboard>:not(#toolkit_init) h3:focus,
+body.toolkit_media_keyboard>:not(#toolkit_init) h4:focus,
+body.toolkit_media_keyboard>:not(#toolkit_init) h5:focus,
+body.toolkit_media_keyboard>:not(#toolkit_init) h6:focus,
+body.toolkit_media_keyboard>:not(#toolkit_init) input:focus,
+body.toolkit_media_keyboard>:not(#toolkit_init) li:focus,
+body.toolkit_media_keyboard>:not(#toolkit_init) p:focus,
+body.toolkit_media_keyboard>:not(#toolkit_init) select:focus,
+body.toolkit_media_keyboard>:not(#toolkit_init) textarea:focus
+{
+	outline: #FFFF00 solid 5px;
+}
+
+/*Block Video*/
+
+body.toolkit_media_video_block *
+{
+	animation: none;
+	animation-name: none;
+	transition-property: none;
+}
 
 /*Greyscale to everything expect the toolkit*/
 body.toolkit_contrast_greyscale > :not(#toolkit_init)
