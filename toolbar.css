@@ -9,7 +9,6 @@
 	border: solid 4px #7e44ad;
 	border-radius: 100%;
 	padding: 10px;
-//box-shadow: 4px 4px 4px #888888;
 
 }
 
@@ -27,7 +26,7 @@
 	width: 300px;
 	top: 0;
 	left: 0;
-	border-radius: 0px 50px 50px 0px;
+	//border-radius: 0px 50px 50px 0px;
 	background-color: white;
 	z-index: 99999;
 	visibility: hidden;
@@ -46,7 +45,7 @@
 	height: 50px;
 	text-align: center;
 	display:table;
-	border-radius: 0px 50px 0px 0px;
+	//border-radius: 0px 50px 0px 0px;
 	box-shadow:20px 20px 50px 10px pink inset;
 	border: 2px solid white;
 	box-sizing: border-box;
@@ -57,16 +56,14 @@
 	font-size: 18px;
 	display:table-cell;
 	vertical-align:middle;
-	padding-right: 30px;
 }
 
 #close_button	{
 	background-color: Transparent;
-	position: fixed;
 	cursor: pointer;
 	height: 50px;
 	width: 50px;
-	right: 10px;
+	right: 0px;
 	outline:none;
 	border: none;
 	position: absolute;
@@ -94,8 +91,14 @@
 	grid-area: right;
 	height: 23px;
 	width: 30px;
-	font-size: 18px;
+	max-font-size: 18px;
+	min-font-size: 18px;
 	margin-bottom: 10px;
+}
+
+#multimedia_block
+{
+	margin-top: 0px;
 }
 
 .button_block_headerAND_flag
@@ -107,7 +110,7 @@
 	justify-items: center;
 }
 
-#multimedia_title
+#multimedia_header
 {
 	font-size: 20px;
 	grid-area: center;
@@ -255,6 +258,16 @@ span.button_text {
 	border-radius: 10px;
 }
 
+
+.toolkit_footer
+{
+	height: 30px;
+	max-width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5px;
+}
 /*Apply filters*/
 
 /*Keyboard surfing*/
