@@ -267,6 +267,7 @@ span.button_text {
 	justify-content: center;
 	align-items: center;
 	padding-top: 5px;
+	font-family: Cambria, Geneva, serif;
 }
 /*Apply filters*/
 
@@ -323,6 +324,11 @@ body.toolkit_highlight_links :any-link
 	text-decoration: underline;
 }
 
+body.toolkit_highlight_links #footer_link
+{
+	background-color: white;
+	text-decoration: none;
+}
 
 body.toolkit_highlight_headers h1,
 body.toolkit_highlight_headers h2,
@@ -352,6 +358,11 @@ span.toolkit_image_titles {
 body.toolkit_change_font :not(div):not(.toolkit):not(span):not(button)
 {
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+body.toolkit_change_font #footer_link
+{
+	font-family: Cambria, Geneva, serif;
 }
 
 body.toolkit_big_cursor_white {
