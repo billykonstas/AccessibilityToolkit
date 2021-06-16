@@ -527,7 +527,7 @@ accessibilityTool.prototype.initializeFonts = function ()
 	document.getElementById('font_size').style.fontSize='18px';
 	document.getElementById('footer_link').style.fontSize='16px';
 	document.getElementById('footer_text').style.fontSize='16px';
-	
+
 }
 
 accessibilityTool.prototype.changeFont = function (event) {
