@@ -85,8 +85,7 @@ accessibilityTool.prototype.initializetoolkit = function (event)
 		fontSize: 1,
 		language: 'GR',
 		imagesTitle: false,
-		keyboardSurf: false,
-		initFontSize: 1
+		keyboardSurf: false
 	};
 
 	//Add checkmarks to all the selected buttons
@@ -412,7 +411,7 @@ accessibilityTool.prototype.changeContrast = function (event)
 	else{
 
 		//When a contrast button is pressed the other contrast buttons are removed from the classList
-		//checkMarkDIV.style.visibility = 'visible';
+		
 
 		var contrastButtons = document.querySelectorAll('#contrast_colors_block button');
 		for (var i = 0; i < contrastButtons.length; i++) {
@@ -540,6 +539,7 @@ accessibilityTool.prototype.changeFont = function (event) {
 		document.body.classList.add(this.id);
 		window.toolkitState.classList[this.id] = this.id;
 	}
+	updateState();
 }
 
 accessibilityTool.prototype.changeFontSize = function (event)
