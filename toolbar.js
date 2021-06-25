@@ -1,12 +1,17 @@
 window.onload = function ()
 {
 	window.accessibilityTool = new accessibilityTool();
+	
 }
 
 function accessibilityTool ()
 {
+	var dateBefore = new Date();
 	this.createtoolkit();
 	this.initializetoolkit();
+
+
+	window.alert(new Date().getTime() - dateBefore.getTime());   
 
 	this.toolkit = document.getElementById('toolkit');
 
@@ -363,7 +368,7 @@ accessibilityTool.prototype.blockVideo = function ()
 	updateState();
 }
 
-/*Mute sound*/
+//Mute sound
 accessibilityTool.prototype.blockAudio = function ()
 {
 	if (document.body.classList.contains(this.id)) {

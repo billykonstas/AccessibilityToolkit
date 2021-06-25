@@ -391,8 +391,8 @@ body.toolkit_big_cursor_black :any-link
 body.toolkit_zoom_in > :not(#toolkit_init)
 {
 	zoom: 1.4;
-	-moz-transform: scale(1.4) ;
-	-moz-transform-origin: 40% 0;
+	transform: scale(1.4) ;
+	transform-origin: 40% 0;
 }
 
 @media only screen and (max-width: 300px) {
