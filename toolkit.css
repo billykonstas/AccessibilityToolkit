@@ -2,7 +2,7 @@
 	position: fixed !important;
 	z-index: 1 !important;
 	display: block !important;
-	right: 0;
+	right: 10px;
  	top: 80px;
 	background-color: #310357;
 	cursor: pointer;
@@ -91,8 +91,6 @@
 	grid-area: right;
 	height: 23px;
 	width: 30px;
-	max-font-size: 18px;
-	min-font-size: 18px;
 	margin-bottom: 10px;
 }
 
