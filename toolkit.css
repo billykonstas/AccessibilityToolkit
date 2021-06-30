@@ -1,6 +1,6 @@
 .starting_button {
 	position: fixed !important;
-	z-index: 1 !important;
+	z-index: 99997!important;
 	display: block !important;
 	left: 10px;
 	top: 10px;
@@ -9,7 +9,8 @@
 	border: solid 4px #7e44ad;
 	border-radius: 100%;
 	padding: 10px;
-
+	height: 60px;
+	width: 60px;
 }
 
 .starting_button:focus, .starting_button:hover {
@@ -39,7 +40,7 @@
 .toolkit_header {
 	position: relative;
 	background-color: yellow;
-	font-family: Helvetica;
+	font-family: Helvetica, Arial, sans-serif;
 	color: white;
 	width: 100%;
 	height: 50px;
@@ -91,9 +92,12 @@
 	grid-area: right;
 	height: 23px;
 	width: 30px;
-	max-font-size: 18px;
-	min-font-size: 18px;
 	margin-bottom: 10px;
+}
+
+span 
+{
+	line-height: initial;
 }
 
 #multimedia_block
@@ -153,7 +157,7 @@
 	margin-bottom: 10px;
 	text-align: center;
 	color: black;
-	font-family: Cambria, Geneva, serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 .control_button_block 
@@ -218,7 +222,7 @@
 
 span.button_text {
 	color: black;
-	font-family: Helvetica;
+	font-family: Helvetica, Arial, sans-serif;
 	text-transform: none;
 	font-size: 12px;
 	font-weight: normal;
@@ -256,6 +260,7 @@ span.button_text {
 	vertical-align: middle;
 	border: 2px solid black;
 	border-radius: 10px;
+	display: initial;
 }
 
 
@@ -267,7 +272,14 @@ span.button_text {
 	justify-content: center;
 	align-items: center;
 	padding-top: 5px;
-	font-family: Cambria, Geneva, serif;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+span#footer_text
+{
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
 }
 /*Apply filters*/
 
@@ -357,12 +369,12 @@ span.toolkit_image_titles {
 
 body.toolkit_change_font :not(div):not(.toolkit):not(span):not(button)
 {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 body.toolkit_change_font #footer_link
 {
-	font-family: Cambria, Geneva, serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 body.toolkit_big_cursor_white {
