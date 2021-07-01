@@ -2,20 +2,28 @@
 	position: fixed !important;
 	z-index: 99997;
 	display: block !important;
-	right: 10px;
- 	top: 80px;
-	background-color: #310357;
+	right: 20px;
+ 	top: 20px;
+	background-image: linear-gradient(to bottom right, hotpink, yellow);
 	cursor: pointer;
-	border: solid 4px #7e44ad;
+	border: solid 2px white;
 	border-radius: 100%;
 	padding: 10px;
 	height: 60px;
 	width: 60px;
+	
 }
 
-.starting_button:focus, .starting_button:hover {
-	border-color: #310357;
-	background-color: #7e44ad;
+span#accessibility_icon
+{
+	font-size: 36px;
+	color: white;
+}
+
+.starting_button:focus :not(#accessibility_icon),
+.starting_button:hover :not(#accessibility_icon) 
+{
+ animation: rotation 5s;
 }
 
 /*The toolkit menu opened*/
@@ -369,7 +377,7 @@ span.toolkit_image_titles {
 
 body.toolkit_change_font :not(div):not(.toolkit):not(span):not(button)
 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family:  Arial, Helvetica, sans-serif;
 }
 
 body.toolkit_change_font #footer_link
@@ -411,4 +419,10 @@ body.toolkit_zoom_in > :not(#toolkit_init)
 	.toolkit {
 		width: 100%;
 	}
+}
+
+@keyframes rotation {
+ 100% {
+  transform: rotate(360deg);
+ }
 }
