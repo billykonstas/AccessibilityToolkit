@@ -1,8 +1,9 @@
 # Accessibility Toolkit 
 
+![alt text](https://github.com/billykonstas/AccessibilityToolkit/blob/main/images/acc_toolkit.png)
 
 # Description
-Accessibility Toolkit was developed as part of my dissertation titled "Web Content Accessibility for People with Disabilities" at University of Western Macedonia. It is a simple accessibility add-on, developed with HTML, CSS and vanilla JavaScript, containing multiple tools that help users with disabilities to browse websites easily.
+Accessibility Toolkit was developed as part of my dissertation titled "Web Content Accessibility for People with Disabilities" at **University of Western Macedonia**. It is a simple accessibility add-on, developed with HTML, CSS and vanilla JavaScript, containing multiple tools that help users with disabilities to browse websites easily.
 
 ### Available features:
 
