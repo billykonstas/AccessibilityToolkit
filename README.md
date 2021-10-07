@@ -5,6 +5,17 @@
 # Description
 Accessibility Toolkit was developed as part of my dissertation titled "Web Content Accessibility for People with Disabilities" at **University of Western Macedonia**. It is a simple accessibility add-on, developed with HTML, CSS and vanilla JavaScript, containing multiple tools that help users with disabilities to browse websites easily.
 
+### Installed at:
+
+* Department of Electrical & Computer Engineering, Uversity of Western Macedonia ([ece.uowm.gr](ece.uowm.gr))
+
+![alt text](https://github.com/billykonstas/AccessibilityToolkit/blob/main/images/ece_acc_toolkit.png)
+
+* Dias Project, Drone Innovation in saffron Agriculture Surveillance ([dias-project.gr](dias-project.gr))
+
+![alt text](https://github.com/billykonstas/AccessibilityToolkit/blob/main/images/dias_acc_toolkit.png)
+
+
 ### Available features:
 
 * Keyboard Surfing
