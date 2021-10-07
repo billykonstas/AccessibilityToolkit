@@ -11,7 +11,7 @@ Accessibility Toolkit was developed as part of my dissertation titled "Web Conte
 
 ![alt text](https://github.com/billykonstas/AccessibilityToolkit/blob/main/images/ece_acc_toolkit.png)
 
-* Dias Project, Drone Innovation in saffron Agriculture Surveillance ([dias-project.gr](https://dias-project.gr//))
+* Dias Project, Drone Innovation in saffron Agriculture Surveillance ([dias-project.gr](http://dias-project.gr//))
 
 ![alt text](https://github.com/billykonstas/AccessibilityToolkit/blob/main/images/dias_acc_toolkit.png)
 
