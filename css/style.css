@@ -255,7 +255,6 @@ p a:hover {
 	margin: 0;
 }
 .highlight {
-	background: #eee url(../images/bg-highlight.jpg) repeat-x left bottom;
 	border-bottom: 1px solid #fff;
 }
 .highlight .clearfix {
