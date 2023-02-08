@@ -36,7 +36,7 @@ span#accessibility_icon
 	box-shadow: 1px 0 4px 0 #777;
 	position: fixed;
 	height: 100vh;
-	width: 300px;
+	width: 350px;
 	top: 0;
 	right: 0;
 	background-color: white;
@@ -44,7 +44,8 @@ span#accessibility_icon
 	visibility: hidden;
 	opacity: 1;
 	transition: opacity .4s;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 	line-height: initial;
 }
 
@@ -83,29 +84,20 @@ span#accessibility_icon
 	position: absolute;
 }
 
-.button_block_headerAND_fontSize
-{
-	display: grid;
-	max-height: 35px;
-	grid-template-areas: 'left center right';
-	grid-template-columns: repeat(3, 1fr);
-}
-
 
 #font_size_header
 {
 	font-size: 20px;
-	grid-area: center;
-	width: 180px;
+	width: 100%;
 }
 
-#font_size
+.font_size
 {
 	color: #00e800;
-	grid-area: right;
+	grid-area: left;
 	height: 23px;
 	width: 30px;
-	margin-bottom: 10px;
+	margin: auto;
 }
 
 span 
@@ -144,7 +136,6 @@ span
 }
 #flag_icon
 {
-	//grid-area: right;
 	width: 30px;
 	height: 30px;
 	position: relative;
@@ -191,8 +182,8 @@ span
 	display: inline-block;
 	font-size: 12px;
 	height: 95px;
-	max-width: 95px;
-	min-width: 95px;
+	max-width: 110px;
+	min-width: 100px;
 	text-align: center;
 	margin-bottom: 20px;
 	vertical-align: middle;
@@ -291,7 +282,7 @@ span.button_text
 .toolkit_footer
 {
 	height: 30px;
-	max-width: 300px;
+	max-width: 350px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -302,7 +293,7 @@ span.button_text
 
 span#footer_text
 {
-  margin-top: 10px;
+    margin-bottom: 10px;
 	font-size: 16px;
 	font-family: Helvetica, Arial, sans-serif;
 }

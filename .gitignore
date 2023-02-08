@@ -5,3 +5,4 @@
 .vs/VSWorkspaceState.json
 *.xml
 .idea/AccessibilityToolbox.iml
+.DS_Store
