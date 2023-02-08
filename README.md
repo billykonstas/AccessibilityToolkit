@@ -1,7 +1,5 @@
 # Accessibility Toolkit 
 
-## Production Environment, use this for CDN link 
-
 ![alt text](https://github.com/billykonstas/AccessibilityToolkit/blob/main/images/acc_toolkit.png)
 
 # Description
@@ -47,7 +45,7 @@ Utilizing the Local Storage for browsers, a JSON file is generated to keep the u
 # Installation 
 In order to install **Accessibility Toolkit** at a website you need to add this script to your website.
 ```HTML
-<script src="https://cdn.jsdelivr.net/gh/billykonstas/AccessibilityToolkit@production/toolkit.min.js"></script>   
+<script src="https://cdn.jsdelivr.net/gh/billykonstas/AccessibilityToolkit@main/toolkit.min.js"></script>   
 ```
 Now your site is more accessible.
 
