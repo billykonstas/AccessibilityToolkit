@@ -1,19 +1,30 @@
 
+:root {
+	--primary: slateblue;
+}
+
+button {
+	padding: 0;
+}
+
 .starting_button 
 {
 	position: fixed;
 	z-index: 99997;
-	display: block;
-	right: 20px;
- 	top: 20px;
-	background-image: linear-gradient(to bottom right, hotpink, yellow);
-
+	right: -10px;
+	top: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 10px;
+	background-color: var(--primary);
 	cursor: pointer;
-	border: solid 2px white;
-	border-radius: 100%;
+	border: solid 1px white;
+	border-right: 0;
+	border-radius: 16px 0 0 16px;
 	padding: 10px;
 	height: 60px;
 	width: 60px;
+	transition: transform .2s;
 
 }
 
@@ -26,7 +37,7 @@ span#accessibility_icon
 .starting_button:focus :not(#accessibility_icon),
 .starting_button:hover :not(#accessibility_icon) 
 {
- animation: rotation 5s;
+ transform: translate(-10px, 0);
 }
 
 /*The toolkit menu opened*/
@@ -38,50 +49,78 @@ span#accessibility_icon
 	height: 100vh;
 	width: 350px;
 	top: 0;
-	right: 0;
-	background-color: white;
+	right: -350px;
+	background-color: #eff1f5;
 	z-index: 99999;
-	visibility: hidden;
-	opacity: 1;
-	transition: opacity .4s;
+	transition: all .4s;
 	overflow-y: auto;
 	overflow-x: hidden;
 	line-height: initial;
 }
 
+.show {
+	right: 0;
+}
+
+.toolkit-inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
 .toolkit_header 
 {
 	position: relative;
-	background-color: yellow;
 	font-family: Helvetica, Arial, sans-serif;
-	color: white;
+	background-color: var(--primary);
+	padding: 0 10px 0 10px;
 	width: 100%;
-	height: 50px;
+	height: 90px;
 	text-align: center;
-	display:table;
-	box-shadow:20px 20px 50px 10px pink inset;
-	border: 2px solid white;
+	align-items: center;
+	padding-bottom: 40px;
+	justify-content: space-between;	
+	display: flex;
 	box-sizing: border-box;
 }
 
+.toolkit_background {
+	border-radius: 16px 16px 16px 16px;
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	background-color: #eff1f5;
+}
+
+#change_language_button
+{
+	background-color: white;
+	color: var(--primary);
+	border-radius: 5px;
+	padding: 3px 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
 
 .header_text 
 {
 	font-size: 18px;
-	display:table-cell;
-	vertical-align:middle;
+	display:block;
+	color: white;
+	width: fit-content;
+	height: fit-content;
 }
 
 #close_button	
 {
 	background-color: Transparent;
 	cursor: pointer;
-	height: 50px;
-	width: 50px;
+	height: 24px;
+	width: 24px;
 	right: 0px;
 	outline:none;
 	border: none;
-	position: absolute;
 }
 
 
@@ -107,10 +146,10 @@ span
 
 #multimedia_block
 {
-	margin-top: 0px;
+	margin-top: 20px;
 }
 
-.button_block_headerAND_flag
+.button_block_reset
 {
 	display: grid;
 	max-height: 35px;
@@ -126,22 +165,6 @@ span
 	width: 95px;
 }
 
-#change_language_button
-{
-	grid-area: right;
-	background-color: transparent;
-	outline: none;
-	border: none;
-	cursor: pointer;
-}
-#flag_icon
-{
-	width: 30px;
-	height: 30px;
-	position: relative;
-	bottom: 4px;
-}
-
 .toolkit_header img 
 {
 	margin-right: 5px;
@@ -153,19 +176,10 @@ span
 	display: block;
 	text-align: center;
 	box-sizing: border-box;
-	height: 125px;
+	height: auto;
 	margin-top: 8px;
 }
 
-.button_block_header 
-{
-	font-size: 20px;
-	display: block;
-	margin-bottom: 10px;
-	text-align: center;
-	color: black;
-	font-family: Helvetica, Arial, sans-serif;
-}
 
 .control_button_block 
 {
@@ -182,24 +196,27 @@ span
 	display: inline-block;
 	font-size: 12px;
 	height: 95px;
-	max-width: 110px;
+	width: 100px;
 	min-width: 100px;
+	padding: 0;
 	text-align: center;
-	margin-bottom: 20px;
 	vertical-align: middle;
-	border: 2px solid black;
+	border: none;
 	border-radius: 10px;
+}
+
+.control_button.enabled > * {
+	color: var(--primary);
 }
 
 #big_button 
 {
-	font-size: 16px;
+	font-size: 12px;
 	line-height: 2;
 }
 
 /*CSS for the check mark*/
-.checkMark{
-	color: dodgerblue;
+.checkMark {
 	position: absolute;
 	top: 2px;
 	left: 2px;
@@ -207,18 +224,43 @@ span
 	visibility: hidden;
 }
 
+.checkMark > .material-icons {
+	color: var(--primary);
+	padding: 5px 0 0 3px;
+	font-size: 10px;
+}
+
 /*When a button is pressed, change the button color and make the border dashed*/
 .enabled 
 {
-	background-color: yellow;
-	box-shadow:20px 20px 50px 10px pink inset;
-	border: dashed 2px black;
+	background-color: white;
+	border: solid 2px var(--primary);
+	box-shadow: inset 0 0 0 3px rgba(106, 90, 205, 0.2);
 }
 
 /*When the button is pressed make the check mark appear*/
 .enabled .checkMark
 {
 	visibility: visible;
+}
+
+
+/* Zoom progress */
+#zoom_bar {
+	width: 60px;
+	height: 10px;
+	border: 1px solid var(--primary);
+	background-color:  rgba(106, 90, 205, 0.2);
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#zoom_progress {
+	background-color: var(--primary);
+	width: 0;
+	height: 10px;
 }
 
 /*To use the material icons package*/
@@ -237,8 +279,13 @@ span.button_text
 	font-family: Helvetica, Arial, sans-serif;
 	text-transform: none;
 	font-size: 12px;
+	margin: auto;
+	width: 85px;
 	font-weight: normal;
 	line-height: normal;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .material-icons-outlined 
@@ -252,16 +299,8 @@ span.button_text
 .control_button:hover,
 .reset_button:hover
 {
-	background-color: yellow;
-	box-shadow:20px 20px 50px 10px pink inset;
-}
-
-.reset_button_block 
-{
-	height: 95px;
-	margin-top: 20px;
-	box-sizing: border-box;
-	text-align: center;
+	border: solid 2px var(--primary);
+	
 }
 
 .reset_button 
@@ -270,10 +309,11 @@ span.button_text
 	cursor: pointer;
 	font-size: 16px;
 	height: 95px;
-	width: 200px;
+	width: 100px;
+	min-width: 100px;
+	border: none;
 	margin-bottom: 20px;
 	vertical-align: middle;
-	border: 2px solid black;
 	border-radius: 10px;
 	display: initial;
 }
@@ -281,29 +321,33 @@ span.button_text
 
 .toolkit_footer
 {
-	height: 30px;
-	max-width: 350px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 5px;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--primary);
+	top: calc(100% - 90px);
+    width: 100%;
+    height: 60px;
+	z-index: -1;
+    text-align: center;
+    align-items: center;
+    padding-top: 12px;
+    display: flex;
+	justify-content: flex-end;
+	padding-left: 15px;
+	padding-right: 15px;
+	gap: 5px;
+    box-sizing: border-box;
 }
 
 span#footer_text
 {
     margin-bottom: 10px;
-	font-size: 16px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: white;
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-span#footer_text
-{
-	margin-top: 10px;
-	font-size: 16px;
-	font-family: Helvetica, Arial, sans-serif;
-}
 
 /*Apply filters*/
 
@@ -322,7 +366,7 @@ body.toolkit_media_keyboard>:not(#toolkit_init) p:focus,
 body.toolkit_media_keyboard>:not(#toolkit_init) select:focus,
 body.toolkit_media_keyboard>:not(#toolkit_init) textarea:focus
 {
-	outline: #FFFF00 solid 5px;
+	outline: var(--primary) solid 5px;
 }
 
 /*Block Video*/
@@ -356,17 +400,17 @@ body.toolkit_contrast_reverse > :not(#toolkit_init)
 }
 
 /*Highlight Links*/
-body.toolkit_highlight_links :any-link
+body.toolkit_highlight_links a:any-link
 {
-	background-color: yellow;
+	background-color: var(--primary);
+	color: white;
 	text-decoration: underline;
 }
 
 /*Don't highlight the link in the footer*/
 body.toolkit_highlight_links #footer_link
 {
-	background-color: white;
-	text-decoration: none;
+	background-color: var(--primary);
 }
 
 /*Highlight Headers*/
@@ -377,7 +421,9 @@ body.toolkit_highlight_headers h4,
 body.toolkit_highlight_headers h5,
 body.toolkit_highlight_headers h6
 {
-	background-color: yellow;
+	background-color: var(--primary);
+	color: white;
+	width: fit-content;
 	text-decoration: underline;
 }
 
@@ -391,7 +437,7 @@ span.toolkit_image_titles
 	margin: 0 auto;
 	font-weight: normal;
 	text-align: center;
-	background: yellow;
+	background-color: var(--primary);
 	color: black;
 	padding: 10px;
 	border: solid 2px black;
@@ -451,11 +497,4 @@ body.toolkit_zoom_in > :not(#toolkit_init)
 	}
 }
 
-
-/*Accessibility Icon rotation*/
-@keyframes rotation {
- 100% {
-  transform: rotate(360deg);
- }
-}
 

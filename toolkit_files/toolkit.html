@@ -10,220 +10,207 @@
 </button>
 
 <div id='toolkit' class='toolkit'>
-	<div class='toolkit_header'>
-		<span class='header_text' id='header_text'>Μενού Προσβασιμότητας</span>
-		<button title='ESC' id='close_button'>
-			<span class='material-icons' style='color: white'>
-				close
-			</span>
-		</button>
-	</div>
-
-	<div class='buttons_with_header_block' id='multimedia_block'>
-		<div class='button_block_headerAND_flag'>
-			<span id='font_size' class='font_size'></span>
-		<span class='button_block_header' id='multimedia_header'>Πολυμέσα</span>
+	<div class="toolkit-inner">
+		<div class='toolkit_header'>
 			<button title='Αλλαγή Γλώσσας' id='change_language_button'>
-				<img id='flag_icon' src='data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAADdAAAA3QFwU6IHAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAThQTFRF////+5CWpG6Y+4WMum+RlGOUQUebQkibQkicRkueRkydR02dR02eSE2eSE6eSE6fSU+fSlCfSlCgTFGgTFKhTVKgTVOhTlOhTlSiT1WiUVWhUVajUVejUkeVUkqXUk6bUlGeUlOgUlejUlikU0eUU1ikVFqkVVqlVlumV1ymWV6nXGGoXmOpX2SqYGWqYGWrYWarYmesY2isZE2TZGmsZmqtZmuuZ2uuaG2uaW2vam+va3CwbHGxbXGxbXKxbnOyb3OycHSycHWzcXWzcnazdHi0dXm1d3y2eHy3en64e3+4fIC4foK6gl2WiIy/io7Ai4/AjZDBkFaKlZjFl5rGmJvGmZzHnaDJoKLKoKPLoaTLoqTLo6bMpKfMpafNpajN9fDw9fX19uDh+Lq++MrN+5CW/Wpy/0tV1Uw64AAAAAZ0Uk5TAIqwuMzZ24+8ogAAAOpJREFUOMtjYBgKgIkVGbAwowFGBjZ+NjYeOFJJRwcMHPE8vHECXLECnFEC3DFSSeiAgU3E1VHY3V7Yy0bYx1JYMQUdMHBECwlGifJFivOEi/FFyGJawabkYqfqZqfkbq3kZaGkkIwOGDjClGVC1SRDNSSCNSRDpBPQAQO7gZW5ga25gYOZvouRPjYrArU0A7TV/XVV/fRV/eVT0QEDh7OhnrOJrrOpnpOFjpNMIjpgYPNmY/MEIw8gKZeGDhh8jZFBEKaCRAKAIZUAYEgnABgSCACGZAKAsBUpBABDEgFA2ApGZryAcUjkPABWg9YaCJi69wAAAABJRU5ErkJggg=='/>
+				ΕΛ
+			</button>
+			<span class='header_text' id='header_text'>Μενού Προσβασιμότητας</span>
+			<button title='ESC' id='close_button'>
+				<span class='material-icons' style='color: white'>
+					close
+				</span>
 			</button>
 		</div>
-		<div class='control_button_block'>
-			<button class='control_button' title='Πλοήγηση με Πληκτρολόγιο' id='toolkit_media_keyboard'>
-				<span class='material-icons'>
-					keyboard
-				</span>
-			<div class='checkMark'>
-				<span class='material-icons'>
-					check_circle
-				</span>
+		<div class="toolkit_background">
+			<div class='buttons_with_header_block' id='multimedia_block'>
+				<div class='control_button_block'>
+					<button class='control_button' title='Πλοήγηση με Πληκτρολόγιο' id='toolkit_media_keyboard'>
+						<span class='material-icons'>
+							keyboard
+						</span>
+					<div class='checkMark'>
+						<span class='material-icons'>
+							circle
+						</span>
+					</div>
+					<span class='button_text' id='toolkit_media_keyboard_txt'>Πλοήγηση με<br>Πληκτρολόγιο</span>
+				</button>
+				<button class='control_button' title='Διακοπή Κινούμενων Εικόνων' id='toolkit_media_video'>
+						<span class='material-icons'>
+							play_disabled
+						</span>
+						<div class='checkMark'>
+							<span class='material-icons'>
+								circle
+							</span>
+						</div>
+						<span class='button_text' id='toolkit_media_video_txt'>Διακοπή<br>Κινούμενων<br>Εικόνων</span>
+				</button>
+				<button class='control_button' title='Διακοπή Ήχων' id='toolkit_media_sound'>
+					<span class='material-icons'>
+						volume_off
+					</span>
+					<div class='checkMark'>
+						<span class='material-icons'>
+							circle
+						</span>
+					</div>
+					<span class='button_text' id='toolkit_media_sound_txt'>Διακοπή<br>Ήχων</span>
+				</button>
+				</div>
+				
 			</div>
-			<span class='button_text' id='toolkit_media_keyboard_txt'>Πλοήγηση με<br>Πληκτρολόγιο</span>
-		</button>
-		<button class='control_button' title='Διακοπή Κινούμενων Εικόνων' id='toolkit_media_video'>
-				<span class='material-icons'>
-					play_disabled
-				</span>
-				<div class='checkMark'>
-					<span class='material-icons'>
-						check_circle
-					</span>
+
+				<div class='buttons_with_header_block' id='contrast_colors_block'>
+					<div class='control_button_block'>
+						<button class='control_button' title='Αποκορεσμός' id='toolkit_contrast_greyscale'>
+							<span class='material-icons'>
+								brightness_medium
+							</span>
+						<div class='checkMark'>
+							<span class='material-icons'>
+								circle
+							</span>
+						</div>
+						<span class='button_text' id='toolkit_contrast_greyscale_txt'>Αποκορεσμός</span>
+					</button>
+					<button class='control_button' title='Ανοιχτή Αντίθεση' id='toolkit_contrast_bright'>
+							<span class='material-icons'>
+								brightness_low
+							</span>
+							<div class='checkMark'>
+								<span class='material-icons'>
+									circle
+								</span>
+							</div>
+							<span class='button_text' id='toolkit_contrast_bright_txt'>Ανοιχτή<br>Αντίθεση</span>
+					</button>
+					<button class='control_button' title='Αντιστροφή Χρωμάτων' id='toolkit_contrast_reverse'>
+						<span class='material-icons'>
+							brightness_7
+						</span>
+						<div class='checkMark'>
+							<span class='material-icons'>
+								circle
+							</span>
+						</div>
+						<span class='button_text' id='toolkit_contrast_reverse_txt'>Αντιστροφή<br>Χρωμάτων</span>
+					</button>
+					</div>
+					
 				</div>
-				<span class='button_text' id='toolkit_media_video_txt'>Διακοπή<br>Κινούμενων<br>Εικόνων</span>
-		</button>
-		<button class='control_button' title='Διακοπή Ήχων' id='toolkit_media_sound'>
-			<span class='material-icons'>
-				volume_off
-			</span>
-			<div class='checkMark'>
-				<span class='material-icons'>
-					check_circle
-				</span>
+
+				<div class='buttons_with_header_block' id='font_size_block'>
+					<div class='control_button_block'>
+						<button class='control_button' title='Μεγιστοποίηση Κειμένου' id='toolkit_max_font'>
+							<span class='material-icons'>
+								format_size
+							</span>
+							<span class='button_text' id='toolkit_max_font_txt'>Μεγιστοποίηση<br>Κειμένου</span>
+							<div id="zoom_bar"><div id="zoom_progress"></div></div>
+
+						</button>
+						<button class='control_button' title='Αλλαγή Γραματοσειράς' id='toolkit_change_font'>
+							<span class='material-icons'>
+								format_shapes
+							</span>
+							<div class='checkMark'>
+								<span class='material-icons'>
+									circle
+								</span>
+							</div>
+							<span class='button_text' id='toolkit_change_font_txt'>Αλλαγή<br>Γραματοσειράς</span>
+						</button>
+						<button class='control_button' title='Μεγένθυση Οθόνης' id='toolkit_zoom_in'>
+							<span class='material-icons'>
+								zoom_in
+							</span>
+							<div class='checkMark'>
+								<span class='material-icons'>
+									circle
+								</span>
+							</div>
+							<span class='button_text' id='toolkit_zoom_in_txt'>Μεγέθυνση<br>Οθόνης</span>
+						</button>
+					</div>
+				</div>
+
+				<div class='buttons_with_header_block' id='highlight_content_block'>
+					<div class='control_button_block'>
+						<button class='control_button' title='Επισήμανση Συνδέσμων' id='toolkit_highlight_links'>
+							<span class='material-icons'>
+								link
+							</span>
+							<div class='checkMark'>
+								<span class='material-icons'>
+									circle
+								</span>
+							</div>
+							<span class='button_text' id='toolkit_highlight_links_txt'>Επισήμανση<br>Συνδέσμων</span>
+						</button>
+						<button class='control_button' title='Επισήμανση Τίτλων' id='toolkit_highlight_headers'>
+							<span class='material-icons'>
+								title
+							</span>
+							<div class='checkMark'>
+								<span class='material-icons'>
+									circle
+								</span>
+							</div>
+							<span class='button_text' id='toolkit_highlight_headers_txt'>Επισήμανση<br>Τίτλων</span>
+						</button>
+						<button class='control_button' title='Εμφάνιση Τίτλων Εικόνων' id='toolkit_highlight_image_titles'>
+							<span class='material-icons'>
+								insert_photo
+							</span>
+							<div class='checkMark'>
+								<span class='material-icons'>
+									circle
+								</span>
+							</div>
+							<span class='button_text' id='toolkit_highlight_image_titles_txt'>Εμφάνιση Τίτλων<br>Εικόνων</span>
+						</button>
+					</div>
+				</div>
+
+				<div class='buttons_with_header_block' id='cursor_and_zoom_block'>
+					<div class='control_button_block'>
+						<button class='control_button' title='Λευκός Κέρσορας' id='toolkit_big_cursor_white'>
+							<span class='material-icons-outlined'>
+								mouse
+							</span>
+							<div class='checkMark'>
+								<span class='material-icons'>
+									circle
+								</span>
+							</div>
+							<span class='button_text' id='toolkit_big_cursor_white_txt'>Λευκός<br>Κέρσορας</span>
+						</button>
+						<button class='control_button' title='Μαύρος Κέρσορας' id='toolkit_big_cursor_black'>
+							<span class='material-icons'>
+								mouse
+							</span>
+							<div class='checkMark'>
+								<span class='material-icons'>
+									circle
+								</span>
+							</div>
+							<span class='button_text' id='toolkit_big_cursor_black_txt'>Μαύρος<br>Κέρσορας</span>
+						</button>
+						<button class='control_button' title='Αφαίρεση' id='toolkit_reset'>
+							<span class='material-icons' style='font-size: 30px'>
+								delete_sweep
+							</span>
+							<span id='big_button' class='button_text'>Αφαίρεση</span>
+						</button>
+					</div>
+				</div>
 			</div>
-			<span class='button_text' id='toolkit_media_sound_txt'>Διακοπή<br>Ήχων</span>
-		</button>
-		</div>
-		
-	</div>
-
-	<div class='buttons_with_header_block' id='contrast_colors_block'>
-		<span class='button_block_header' id='contrast_header'>Αντίθεση Χρωμάτων</span>
-		<div class='control_button_block'>
-			<button class='control_button' title='Αποκορεσμός' id='toolkit_contrast_greyscale'>
-				<span class='material-icons'>
-					brightness_medium
-				</span>
-			<div class='checkMark'>
-				<span class='material-icons'>
-					check_circle
-				</span>
+			<div class='toolkit_footer'>
+				<span id='footer_text'>Δημιουργός</span>
+				<a id='footer_link' href='https://github.com/billykonstas' style='color: white;'>Vasilis Konstantaras</a>
+				<span id='footer_year' style='color: white; font-size: 12px;'> - 2024</span>
 			</div>
-			<span class='button_text' id='toolkit_contrast_greyscale_txt'>Αποκορεσμός</span>
-		</button>
-		<button class='control_button' title='Ανοιχτή Αντίθεση' id='toolkit_contrast_bright'>
-				<span class='material-icons'>
-					brightness_low
-				</span>
-				<div class='checkMark'>
-					<span class='material-icons'>
-						check_circle
-					</span>
-				</div>
-				<span class='button_text' id='toolkit_contrast_bright_txt'>Ανοιχτή<br>Αντίθεση</span>
-		</button>
-		<button class='control_button' title='Αντιστροφή Χρωμάτων' id='toolkit_contrast_reverse'>
-			<span class='material-icons'>
-				brightness_7
-			</span>
-			<div class='checkMark'>
-				<span class='material-icons'>
-					check_circle
-				</span>
-			</div>
-			<span class='button_text' id='toolkit_contrast_reverse_txt'>Αντιστροφή<br>Χρωμάτων</span>
-		</button>
 		</div>
-		
-	</div>
-
-	<div class='buttons_with_header_block' id='font_size_block'>
-			<span class='button_block_header' id='font_size_header'>Μέγεθος Κειμένου</span>
-		<div class='control_button_block'>
-			<button class='control_button' title='Μεγιστοποίηση Κειμένου' id='toolkit_max_font'>
-				<span class='material-icons'>
-					format_size
-				</span>
-				<span class='button_text' id='toolkit_max_font_txt'>Μεγιστοποίηση<br>Κειμένου</span>
-			</button>
-			<button class='control_button' title='Σμίκρυση Κειμένου' id='toolkit_min_font'>
-				<span class='material-icons'>
-					text_fields
-				</span>
-				<span class='button_text' id='toolkit_min_font_txt'>Σμίκρυση<br>Κειμένου</span>
-			</button>
-			<button class='control_button' title='Αλλαγή Γραματοσειράς' id='toolkit_change_font'>
-				<span class='material-icons'>
-					format_shapes
-				</span>
-				<div class='checkMark'>
-					<span class='material-icons'>
-						check_circle
-					</span>
-				</div>
-				<span class='button_text' id='toolkit_change_font_txt'>Αλλαγή<br>Γραματοσειράς</span>
-			</button>
-		</div>
-	</div>
-
-	<div class='buttons_with_header_block' id='highlight_content_block'>
-		<span class='button_block_header' id='highlight_content_header'>Επισήμανση Περιεχομένου</span>
-		<div class='control_button_block'>
-			<button class='control_button' title='Επισήμανση Συνδέσμων' id='toolkit_highlight_links'>
-				<span class='material-icons'>
-					link
-				</span>
-				<div class='checkMark'>
-					<span class='material-icons'>
-						check_circle
-					</span>
-				</div>
-				<span class='button_text' id='toolkit_highlight_links_txt'>Επισήμανση<br>Συνδέσμων</span>
-			</button>
-			<button class='control_button' title='Επισήμανση Τίτλων' id='toolkit_highlight_headers'>
-				<span class='material-icons'>
-					title
-				</span>
-				<div class='checkMark'>
-					<span class='material-icons'>
-						check_circle
-					</span>
-				</div>
-				<span class='button_text' id='toolkit_highlight_headers_txt'>Επισήμανση<br>Τίτλων</span>
-			</button>
-			<button class='control_button' title='Εμφάνιση Τίτλων Εικόνων' id='toolkit_highlight_image_titles'>
-				<span class='material-icons'>
-					insert_photo
-				</span>
-				<div class='checkMark'>
-					<span class='material-icons'>
-						check_circle
-					</span>
-				</div>
-				<span class='button_text' id='toolkit_highlight_image_titles_txt'>Εμφάνιση Τίτλων<br>Εικόνων</span>
-			</button>
-		</div>
-	</div>
-
-	<div class='buttons_with_header_block' id='cursor_and_zoom_block'>
-		<span class='button_block_header' id='zoom_header'>Μεγέθυνση</span>
-		<div class='control_button_block'>
-			<button class='control_button' title='Λευκός Κέρσορας' id='toolkit_big_cursor_white'>
-				<span class='material-icons-outlined'>
-					mouse
-				</span>
-				<div class='checkMark'>
-					<span class='material-icons'>
-						check_circle
-					</span>
-				</div>
-				<span class='button_text' id='toolkit_big_cursor_white_txt'>Λευκός<br>Κέρσορας</span>
-			</button>
-			<button class='control_button' title='Μαύρος Κέρσορας' id='toolkit_big_cursor_black'>
-				<span class='material-icons'>
-					mouse
-				</span>
-				<div class='checkMark'>
-					<span class='material-icons'>
-						check_circle
-					</span>
-				</div>
-				<span class='button_text' id='toolkit_big_cursor_black_txt'>Μαύρος<br>Κέρσορας</span>
-			</button>
-			<button class='control_button' title='Μεγένθυση Οθόνης' id='toolkit_zoom_in'>
-				<span class='material-icons'>
-					zoom_in
-				</span>
-				<div class='checkMark'>
-					<span class='material-icons'>
-						check_circle
-					</span>
-				</div>
-				<span class='button_text' id='toolkit_zoom_in_txt'>Μεγέθυνση<br>Οθόνης</span>
-			</button>
-		</div>
-	</div>
-
-	<div class='reset_button_block'>
-		<button class='reset_button' title='Αφαίρεση Επιλογών' id='toolkit_reset'>
-			<span id='big_button' class='button_text'>Αφαίρεση Επιλογών</span>
-			<span class='material-icons' style='font-size: 30px'>
-				delete_sweep
-			</span>
-		</button>
-	</div>
-
-	<div class='toolkit_footer'>
-		<span id='footer_text'>Created by: <a id='footer_link' href='https://github.com/billykonstas' style='text-decoration: none; color: black'>Vasilis Konstantaras</a>
-		</span>
-	</div>
-
 </div>
