@@ -12,7 +12,7 @@ button {
 	position: fixed;
 	z-index: 99997;
 	right: -10px;
-	top: 0;
+	top: 30px;
 	margin-top: auto;
 	margin-bottom: auto;
 	padding-right: 10px;
@@ -46,31 +46,26 @@ span#accessibility_icon
 	color: black;
 	box-shadow: 1px 0 4px 0 #777;
 	position: fixed;
-	height: 100vh;
-	width: 350px;
+	height: 100%;
+	width: 370px;
 	top: 0;
-	right: -350px;
+	right: -370px;
 	background-color: #eff1f5;
 	z-index: 99999;
 	transition: all .4s;
-	overflow-y: auto;
-	overflow-x: hidden;
-	line-height: initial;
+	overflow-y: hidden;
+	display: flex;
+	flex-direction: column;
 }
 
 .show {
 	right: 0;
 }
 
-.toolkit-inner {
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
 .toolkit_header 
 {
-	position: relative;
+	position: sticky;
+	top: 0;
 	font-family: Helvetica, Arial, sans-serif;
 	background-color: var(--primary);
 	padding: 0 10px 0 10px;
@@ -84,12 +79,38 @@ span#accessibility_icon
 	box-sizing: border-box;
 }
 
-.toolkit_background {
-	border-radius: 16px 16px 16px 16px;
+.toolkit_content {
+	border-radius: 16px;
 	position: absolute;
+	height: calc(100% - 100px);
 	top: 50px;
 	width: 100%;
 	background-color: #eff1f5;
+}
+
+.inner_content {
+
+	margin: 15px 5px 15px 10px;
+	width: 350px;
+	height: calc(100% - 30px);
+	overflow-y: auto;
+	padding-right: 5px;
+}
+
+
+.inner_content::-webkit-scrollbar {
+	width: 5px;
+}
+
+
+.inner_content::-webkit-scrollbar-track {
+	background-color: rgba(106, 90, 205, 0.2);
+	border-radius: 10px;
+}
+
+.inner_content::-webkit-scrollbar-thumb {
+	background-color: var(--primary);
+	border-radius: 10px;
 }
 
 #change_language_button
@@ -144,10 +165,6 @@ span
 	line-height: initial;
 }
 
-#multimedia_block
-{
-	margin-top: 20px;
-}
 
 .button_block_reset
 {
@@ -158,35 +175,19 @@ span
 	justify-items: center;
 }
 
-#multimedia_header
-{
-	font-size: 20px;
-	grid-area: center;
-	width: 95px;
-}
 
 .toolkit_header img 
 {
 	margin-right: 5px;
 }
 
-.buttons_with_header_block 
-{
-	position: relative;
-	display: block;
-	text-align: center;
-	box-sizing: border-box;
-	height: auto;
-	margin-top: 8px;
-}
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	grid-template-rows: repeat(7, 1fr); 
+	gap: 10px; 
+  }
 
-
-.control_button_block 
-{
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
 
 .control_button 
 {
@@ -196,8 +197,7 @@ span
 	display: inline-block;
 	font-size: 12px;
 	height: 95px;
-	width: 100px;
-	min-width: 100px;
+	width: 100%;
 	padding: 0;
 	text-align: center;
 	vertical-align: middle;
@@ -207,12 +207,6 @@ span
 
 .control_button.enabled > * {
 	color: var(--primary);
-}
-
-#big_button 
-{
-	font-size: 12px;
-	line-height: 2;
 }
 
 /*CSS for the check mark*/
@@ -227,7 +221,7 @@ span
 .checkMark > .material-icons {
 	color: var(--primary);
 	padding: 5px 0 0 3px;
-	font-size: 10px;
+	font-size: 12px !important;
 }
 
 /*When a button is pressed, change the button color and make the border dashed*/
@@ -247,7 +241,7 @@ span
 
 /* Zoom progress */
 #zoom_bar {
-	width: 60px;
+	width: 80px;
 	height: 10px;
 	border: 1px solid var(--primary);
 	background-color:  rgba(106, 90, 205, 0.2);
@@ -272,15 +266,18 @@ span
 	color: black;
 }
 
+.material-icons {
+	font-size: 28px !important;
+}
 
 span.button_text 
 {
 	color: black;
 	font-family: Helvetica, Arial, sans-serif;
 	text-transform: none;
-	font-size: 12px;
+	font-size: 14px;
 	margin: auto;
-	width: 85px;
+	width: 120px;
 	font-weight: normal;
 	line-height: normal;
 	overflow: hidden;
@@ -321,16 +318,16 @@ span.button_text
 
 .toolkit_footer
 {
-	position: relative;
+	position: sticky;
     font-family: Helvetica, Arial, sans-serif;
     background-color: var(--primary);
 	top: calc(100% - 90px);
     width: 100%;
-    height: 60px;
+    height: 90px;
 	z-index: -1;
     text-align: center;
     align-items: center;
-    padding-top: 12px;
+    padding-top: 40px;
     display: flex;
 	justify-content: flex-end;
 	padding-left: 15px;
@@ -438,7 +435,7 @@ span.toolkit_image_titles
 	font-weight: normal;
 	text-align: center;
 	background-color: var(--primary);
-	color: black;
+	color: white;
 	padding: 10px;
 	border: solid 2px black;
 }

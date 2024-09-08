@@ -289,12 +289,6 @@ function englify ()
 
 	document.getElementById('toolkit_reset').title = 'Reset';
 	document.getElementById('big_button').innerHTML = 'Reset';
-
-	document.getElementById('footer_text').title = 'Created by';
-	document.getElementById('footer_text').innerHTML = 'Created by';
-
-
-
 }
 
 function greekify ()
@@ -317,8 +311,8 @@ function greekify ()
 	document.getElementById('toolkit_contrast_reverse').title = 'Αντιστροφή Χρωμάτων';
 	document.getElementById('toolkit_contrast_reverse_txt').innerHTML = 'Αντιστροφή<br>Χρωμάτων';
 
-	document.getElementById('toolkit_max_font').title = 'Μεγιστοποίηση Κειμένου';
-	document.getElementById('toolkit_max_font_txt').innerHTML = 'Μεγιστοποίηση<br>Κειμένου';
+	document.getElementById('toolkit_max_font').title = 'Μεγέθυνση Κειμένου';
+	document.getElementById('toolkit_max_font_txt').innerHTML = 'Μεγέθυνση<br>Κειμένου';
 	document.getElementById('toolkit_change_font').title = 'Αλλαγή Γραμματοσειράς';
 	document.getElementById('toolkit_change_font_txt').innerHTML = 'Αλλαγή<br>Γραμματοσειράς';
 
@@ -338,9 +332,6 @@ function greekify ()
 
 	document.getElementById('toolkit_reset').title = 'Αφαίρεση';
 	document.getElementById('big_button').innerHTML = 'Αφαίρεση';
-
-	document.getElementById('footer_text').title = 'Δημιουργός';
-	document.getElementById('footer_text').innerHTML = 'Δημιουργός';
 }
 
 //keyboard surfing
@@ -544,10 +535,7 @@ function initializeFonts ()
 	//A bug at the query selections selects footer elements
 	document.getElementById('change_language_button').style.fontSize='12px';
 	document.getElementById('footer_link').style.fontSize='12px';
-	document.getElementById('footer_text').style.fontSize='12px';
 	document.getElementById('footer_year').style.fontSize='12px';
-
-
 }
 
 accessibilityTool.prototype.changeFont = function (event) {
@@ -621,9 +609,7 @@ function setFontProgress(fontSize)
 	//A bug at the query selections also selects font_size and changes it size
 	document.getElementById('change_language_button').style.fontSize='12px';
 	document.getElementById('footer_link').style.fontSize='12px';
-	document.getElementById('footer_text').style.fontSize='12px';
 	document.getElementById('footer_year').style.fontSize='12px';
-
 }
 
 //Change cursors
