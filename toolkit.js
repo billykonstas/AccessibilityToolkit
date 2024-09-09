@@ -121,10 +121,13 @@ accessibilityTool.prototype.initializetoolkit = function (event)
 //toolkit creation
 accessibilityTool.prototype.createtoolkit = function ()
 {
+	const htmlURL = 'https://cdn.jsdelivr.net/gh/billykonstas/AccessibilityToolkit@main/toolkit_files/toolkit.html';
+	const cssURL = 'https://cdn.jsdelivr.net/gh/billykonstas/AccessibilityToolkit@main/toolkit_files/toolkit.css';
 
 	var toolkit = document.createElement('div');
 	toolkit.id = 'toolkit_init';
-	fetch('toolkit_files/toolkit.html')
+	// when developing fetch locally 'toolkit_files/toolkit.html'
+	fetch(htmlURL)
 		.then(response => response.text())
 		.then(htmlContent => {
 			const minifiedHTML = minifyHTML(htmlContent);
@@ -132,7 +135,7 @@ accessibilityTool.prototype.createtoolkit = function ()
 		})
 		.catch(error => console.error(error));
 
-	fetch('toolkit_files/toolkit.css')
+	fetch(cssURL)
 		.then(response => response.text())
 		.then(cssContent => {
 		
