@@ -262,7 +262,7 @@ span
 #zoom_progress {
 	background-color: var(--primary);
 	width: 0;
-	height: 10px;
+	height: 8px;
 }
 
 /*To use the material icons package*/
