@@ -1,19 +1,21 @@
 # Accessibility Toolkit 
 
-![alt text](https://github.com/billykonstas/AccessibilityToolkit/blob/main/images/acc_toolkit.png)
+![Toolkit installed at University of Western Macedonia - Open](https://github.com/billykonstas/AccessibilityToolkit/blob/main/images/toolkit-open.png)
 
 # Description
 Accessibility Toolkit was developed as part of my dissertation titled "Web Content Accessibility for People with Disabilities" at **University of Western Macedonia**. It is a simple accessibility add-on, developed with HTML, CSS and vanilla JavaScript, containing multiple tools that help users with disabilities to browse websites easily.
 
 ### Installed at:
 
-* Department of Electrical & Computer Engineering, Uversity of Western Macedonia ([ece.uowm.gr](https://ece.uowm.gr/))
+* Department of Electrical & Computer Engineering, Uversity of Western Macedonia - Closed bottom right corner ([ece.uowm.gr](https://ece.uowm.gr/))
 
-![alt text](https://github.com/billykonstas/AccessibilityToolkit/blob/main/images/ece_acc_toolkit.png)
+![Toolkit installed at University of Western Macedonia - Closed](https://github.com/billykonstas/AccessibilityToolkit/blob/main/images/toolkit-closed.png)
 
-* Dias Project, Drone Innovation in saffron Agriculture Surveillance ([dias-project.gr](http://dias-project.gr//))
+* Department of Electrical & Computer Engineering, Uversity of Western Macedonia - Mobile View ([ece.uowm.gr](https://ece.uowm.gr/))
 
-![alt text](https://github.com/billykonstas/AccessibilityToolkit/blob/main/images/dias_acc_toolkit.png)
+![Toolkit installed at University of Western Macedonia - Mobile](https://github.com/billykonstas/AccessibilityToolkit/blob/main/images/toolkit-mobile.png)
+
+* Dias Project, Drone Innovation in saffron Agriculture Surveillance ([dias-project.gr](http://dias-project.gr//)) **NOT ACTIVE ANYMORE**
 
 
 ### Available features:
