@@ -62,7 +62,7 @@ span#accessibility_icon
 	.toolkit {
 		width: 100vw;
 		height: 100vh;
-		right: -380px;
+		right: -100vw;
 	}
 }
 
@@ -103,6 +103,12 @@ span#accessibility_icon
 	height: calc(100% - 30px);
 	overflow-y: auto;
 	padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+	.inner_content {
+		width: calc(100vw - 25px);
+	}
 }
 
 
